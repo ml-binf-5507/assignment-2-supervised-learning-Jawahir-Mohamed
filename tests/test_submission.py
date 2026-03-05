@@ -21,9 +21,11 @@ from sklearn.metrics import roc_auc_score, average_precision_score, r2_score
 import sys
 import os
 import matplotlib.pyplot as plt
-
 # Add students module to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+#sys.path.insert(0, os.path.join(os.path.dirname('..')))
+#sys.path.insert(0, os.path.abspath('../../..'))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 from students import data_processing, regression, classification, evaluation
 
